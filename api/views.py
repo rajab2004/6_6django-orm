@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.http import HttpRequest, JsonResponse
 
-# Create your views here.
+
+def products_view(request: HttpRequest) -> JsonResponse:
+    
+    return JsonResponse(data={})
+
